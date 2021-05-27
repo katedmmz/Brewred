@@ -1,0 +1,47 @@
+﻿<Window x:Name="wndCreate1" x:Class="Brew.wndCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Brew"
+        mc:Ignorable="d"
+        Title="Добавить" Height="310" Width="320" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+         <Label Content="Название:" HorizontalAlignment="Left" Margin="15,25,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="83"/>
+        <TextBox x:Name="NameTB" HorizontalAlignment="Left" Height="23" Margin="20.2,33,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+        
+        <Label Content="Страна:" HorizontalAlignment="Left" Margin="15,53,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="66"/>
+        <TextBox x:Name="CountryTB" HorizontalAlignment="Left" Height="23" Margin="20.2,61,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+        
+        <Label Content="Дата основания:" HorizontalAlignment="Left" Margin="15,81,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="130"/>
+        <DatePicker x:Name="DateDP" HorizontalAlignment="Left" Margin="20.2,89,0,0" VerticalAlignment="Top" Width="122" DisplayDateEnd="{x:Static sys:DateTime.Today}" Grid.Column="1" Height="23"/>
+        
+        <Label Content="Основатель:" HorizontalAlignment="Left" Margin="15,109,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="99"/>
+        <TextBox x:Name="FounderTB" HorizontalAlignment="Left" Height="23" Margin="20.2,117,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+        
+        <Label Content="Ср. рейтинг:" HorizontalAlignment="Left" Margin="15,165,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="99"/>
+        <TextBox x:Name="AvgRatingTB" HorizontalAlignment="Left" Height="23" Margin="20.2,173,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1" MaxLines="1"/>
+
+        <Label Content="Кол-во продуктов:" HorizontalAlignment="Left" Margin="15,137,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="151" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="VarietyTB" HorizontalAlignment="Left" Height="23" Margin="20.2,145,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+
+        <Label Content="Производство:" HorizontalAlignment="Left" Margin="15,193,0,0" VerticalAlignment="Top" FontSize="16" Height="32" Width="118"/>
+        <ComboBox x:Name="ProductCB" HorizontalAlignment="Left" Margin="20.2,201,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1" Height="22">
+            <CheckBox Content="Пиво" Width="158" Margin="-5,-2,-5,-3" Click="CheckBox_Click"/>
+            <CheckBox Content="Безалкогольные напитки" Width="158" Margin="-5,-1,-5,-3" Click="CheckBox_Click"/>
+            <CheckBox Content="Соки" Width="158" Margin="-5,-1,-5,-3" Click="CheckBox_Click"/>
+            <CheckBox Content="Энергетические напитки" Width="158" Margin="-5,-1,-5,-3" Click="CheckBox_Click"/>
+            <CheckBox Content="Сидр" Width="158" Margin="-5,-1,-5,-3" Click="CheckBox_Click"/>
+            <CheckBox Content="Воды" Width="158" Margin="-5,-1,-5,-3" Click="CheckBox_Click"/>
+        </ComboBox>
+
+        <Button x:Name="AcceptBtn" Content="Добавить" HorizontalAlignment="Left" Margin="64,248,0,0" VerticalAlignment="Top" Width="75" Click="AcceptBtn_Click" Height="19"/>
+        <Button x:Name="CancelBtn" Content="Отмена" HorizontalAlignment="Left" Margin="17.2,248,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Grid.Column="1" Height="19"/>
+    </Grid>
+</Window>

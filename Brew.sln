@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brew", "Brew\Brew.csproj", "{EF8DB1E8-477C-4C6E-AE93-5685113AC303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF8DB1E8-477C-4C6E-AE93-5685113AC303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8DB1E8-477C-4C6E-AE93-5685113AC303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8DB1E8-477C-4C6E-AE93-5685113AC303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8DB1E8-477C-4C6E-AE93-5685113AC303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F49A2D0-6ACA-49B1-86F2-C8E8A4543A50}
+	EndGlobalSection
+EndGlobal
